@@ -54,6 +54,27 @@ that runs entirely in the browser are on Hugging Face.
 
 ---
 
+### EuroDocBench
+
+**Can your document AI read a European invoice?**
+
+```bash
+eurodocbench-score --gold gold/test.jsonl --pred predictions.jsonl
+```
+
+A synthetic, exactly labelled benchmark for extracting 12 key fields from
+invoices in 12 European locales and five layouts, with a born-digital text
+track and a simulated-scan track. A zero-shot small LLM finds names and
+identifiers reliably but gets only about half of the amounts right — the
+European number formats, dates and VAT breakdowns are where it fails.
+
+**[Repository](https://github.com/sinceaihq/eurodocbench)** ·
+**[Dataset](https://huggingface.co/datasets/sinceaihq/eurodocbench)** ·
+**[Results](https://huggingface.co/spaces/sinceaihq/eurodocbench-results)** ·
+**[Report](https://github.com/sinceaihq/eurodocbench/blob/main/docs/REPORT.md)**
+
+---
+
 ### EuroPII Guard
 
 **Find and redact European personal data before text leaves your organisation.**
