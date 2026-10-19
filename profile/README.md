@@ -54,4 +54,24 @@ that runs entirely in the browser are on Hugging Face.
 
 ---
 
+### EuroPII Guard
+
+**Find and redact European personal data before text leaves your organisation.**
+
+```bash
+echo "Henkilötunnus 150685A123D, IBAN DE89 3704 0044 0532 0130 00" | europii redact
+```
+
+Checksum-validated detection of national identity numbers from 22 European
+countries, EU VAT numbers, IBANs, payment cards, phone numbers and e-mail
+addresses. Pure Python, runs offline or in the browser, plugs into Presidio.
+A privacy-assistance tool, not a compliance guarantee.
+
+**[Repository](https://github.com/sinceaihq/europii-guard)** ·
+**[Demo](https://huggingface.co/spaces/sinceaihq/europii-guard-demo)** ·
+**[Benchmark](https://huggingface.co/datasets/sinceaihq/europii-bench)** ·
+**[Report](https://github.com/sinceaihq/europii-guard/blob/main/docs/REPORT.md)**
+
+---
+
 Get in touch: **builders@sinceai.fi**
