@@ -31,4 +31,27 @@ code, which are treated as the most serious class of bug in that project.
 
 ---
 
+### EuroTender
+
+**CPV codes for European public tenders, in any EU language, on a CPU.**
+
+```python
+from eurotender import predict_cpv
+predict_cpv("Development and maintenance of municipal IT systems")
+```
+
+A multilingual classifier that suggests Common Procurement Vocabulary codes
+for tender notices, trained on 510k TED notices and evaluated on 234k notices
+published after the training period (82 % top-1, 94 % top-5 for the CPV
+division, 22 languages). The model, the leakage-controlled dataset and a demo
+that runs entirely in the browser are on Hugging Face.
+
+**[Repository](https://github.com/sinceaihq/eurotender)** ·
+**[Model](https://huggingface.co/sinceaihq/eurotender-cpv-baseline)** ·
+**[Dataset](https://huggingface.co/datasets/sinceaihq/eurotender-cpv)** ·
+**[Demo](https://huggingface.co/spaces/sinceaihq/eurotender-cpv-demo)** ·
+**[Report](https://github.com/sinceaihq/eurotender/blob/main/docs/REPORT.md)**
+
+---
+
 Get in touch: **builders@sinceai.fi**
