@@ -95,4 +95,61 @@ A privacy-assistance tool, not a compliance guarantee.
 
 ---
 
+### SafePrompt
+
+**Check what you paste into AI chat for personal data and secrets — locally.**
+
+A Chromium extension that checks text when you paste it into ChatGPT or Gemini
+(Claude opt-in), finds European national ID numbers (checksum-validated, 22
+countries), EU VAT numbers, IBANs, contact details and API keys, and gives you
+a sanitized version with placeholders you can restore in the answer. Nothing
+leaves your browser, and it never sends anything for you.
+
+**[Repository](https://github.com/sinceaihq/safeprompt)** ·
+**[Download](https://github.com/sinceaihq/safeprompt/releases/latest)** ·
+**[Demo](https://huggingface.co/spaces/sinceaihq/safeprompt-demo)** ·
+**[Benchmark](https://huggingface.co/datasets/sinceaihq/safeprompt-bench)**
+
+---
+
+### DocToSheet
+
+**Invoices and receipts to a spreadsheet, on your own computer — every value traceable.**
+
+```bash
+doctosheet extract invoice.pdf -o invoices.xlsx
+```
+
+Reads European e-invoices exactly (Factur-X / ZUGFeRD, XRechnung, Peppol,
+Finvoice), PDFs and scans, shows where on the page each value came from, and
+never exports a computed amount as if it were printed. Evaluated on invoices
+from producers never seen during development.
+
+**[Repository](https://github.com/sinceaihq/doctosheet)** ·
+**[Demo](https://huggingface.co/spaces/sinceaihq/doctosheet-demo)** ·
+**[Evaluation](https://github.com/sinceaihq/doctosheet/blob/main/docs/EVALUATION.md)**
+
+---
+
+### GroundClaim
+
+**Your agent says the tests pass. GroundClaim checks.**
+
+```bash
+groundclaim check --base main --trace run.jsonl --message-file message.md
+```
+
+Checks AI agents' completion claims — tests pass, committed, pushed, PR
+opened, deployed — against git, run traces, test reports and CI, with verdicts
+that say how strong the evidence is. Includes a GitHub Action for pull
+requests and a benchmark that measures how often a checker confirms a false
+claim.
+
+**[Repository](https://github.com/sinceaihq/groundclaim)** ·
+**[Benchmark](https://huggingface.co/datasets/sinceaihq/groundclaim-bench)** ·
+**[Report viewer](https://huggingface.co/spaces/sinceaihq/groundclaim-viewer)** ·
+**[Report](https://github.com/sinceaihq/groundclaim/blob/main/docs/BENCHMARK.md)**
+
+---
+
 Get in touch: **builders@sinceai.fi**
